@@ -27,7 +27,7 @@ body {
 
 /*********MAPA********/
 .mapa {
-	background: url(https://nimero09.github.io/Portfolio/digital-agency/img/mapa.PNG);
+	background: url("https://nimero09.github.io/Portfolio/digital-agency/img/mapa.PNG");
 	width: 100%;
 	height: 500px;
 }
