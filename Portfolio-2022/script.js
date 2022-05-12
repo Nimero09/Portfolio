@@ -125,14 +125,10 @@ menuBtn.addEventListener("click", () => {
 	navigation.classList.add("active");
 })
 
-closeBtn.addEventListener("click", () => {
-	close();
-})
+closeBtn.addEventListener("click", close);
 
 navItems.forEach((navItem) => {
-	navItem.addEventListener("click", () => {
-		close();
-	})
+	navItem.addEventListener("click", close);
 })
 
 // Alternate nav-menu highlight when scrolling code
