@@ -112,6 +112,29 @@ window.addEventListener("scroll", () => {
 	})
 })
 
+// Resposive navigation menu toggle 
+const menuBtn = document.querySelector(".nav-menu-btn");
+const closeBtn = document.querySelector(".nav-close-btn");
+const navigation = document.querySelector(".navigation");
+const navItems = document.querySelectorAll(".nav-items a");
+const close = () => {
+	navigation.classList.remove("active");
+}
+
+menuBtn.addEventListener("click", () => {
+	navigation.classList.add("active");
+})
+
+closeBtn.addEventListener("click", () => {
+	close();
+})
+
+navItems.forEach((navItem) => {
+	navItem.addEventListener("click", () => {
+		close();
+	})
+})
+
 // Alternate nav-menu highlight when scrolling code
 
 // window.addEventListener("scroll", () => {

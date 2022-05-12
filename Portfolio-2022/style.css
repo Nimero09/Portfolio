@@ -948,6 +948,14 @@ footer a {
 		justify-content: center;
 		align-items: center;
 		background: var(--transparent-color-01);
+		visibility: hidden;
+		opacity: 0;
+		transition: .3s ease;
+	}
+
+	.navigation.active {
+		visibility: visible;
+		opacity: 1;
 	}
 
 	.nav-items {
@@ -963,6 +971,12 @@ footer a {
 		padding: 40px;
 		border-radius: 10px;
 		box-shadow: var(--box-shadow);
+		transform: translateY(-50px);
+		transition: .3s ease;
+	}
+
+	.navigation.active .nav-items {
+		transform: translateY(0);
 	}
 
 	.nav-items a {
@@ -979,6 +993,8 @@ footer a {
 		height: 40px;
 		top: 0;
 		right: 0;
+		margin: 10px;
+		cursor: pointer;
 	}
 
 	.nav-menu-btn {
