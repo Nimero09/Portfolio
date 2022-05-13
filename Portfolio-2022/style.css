@@ -1145,6 +1145,20 @@ footer a {
 	.media-icons {
 		margin-bottom: 80px;
 	}
+
+	/*Get in touch*/
+	.get-in-touch .contact-card {
+		display: grid;
+	}
+
+	.contact-card .title {
+		font-size: 0.6rem;
+		line-height: 40px;
+	}
+
+	.contact-card .contact-btn .btn {
+		font-size: 0.8rem;
+	}
 }
 
 /*Common styles for all sections*/
