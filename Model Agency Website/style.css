@@ -88,24 +88,25 @@ header .nav-bar {
 
 /*Hero*/
 
-section.hero {
+div.hero {
 	background: #F2F2F2;
 	height: 100vh;
 	width: 100%;
 }
 
-section.hero .container {
+div.hero .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	max-width: 1250px;
 	margin: 0 auto;
 	column-gap: 50px;
+	position: relative;
 }
 
 .hero-img img {
-	height: auto;
-	width: 500px;
+	height: 100vh;
+	width: auto;
 }
 
 
@@ -146,3 +147,65 @@ button {
 	border: 1px solid #000000;
 }
 
+/*About*/
+
+.nosotros .container h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+	text-align: center;
+	font-weight: 600;
+}
+
+.container .description {
+	width: 100%;
+	column-gap: 40px;
+	margin-top: 50px;
+}
+
+.description .description-text {
+	max-width: 550px;
+}
+
+.description-img {
+	position: relative;
+}
+
+.description-img img {
+	max-width: 100%;
+	min-width: 500px;
+	height: auto;
+}
+
+.description-text h6 {
+	font-size: 1.2em;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.description-text h2 {
+	font-size: 3em;
+	font-weight: 400;
+}
+
+.description-text p {
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 35px;
+	margin-top: 25px;
+}
+
+/*All styles*/
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section {
+	max-width: 1150px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 6rem 2rem 2rem;
+}
