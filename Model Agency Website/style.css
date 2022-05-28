@@ -149,11 +149,32 @@ button {
 
 /*About*/
 
-.nosotros .container h1 {
+
+section .container h1 {
 	text-transform: uppercase;
 	font-size: 3em;
-	text-align: center;
-	font-weight: 600;
+	font-weight: 500;
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+section .container h1::after {
+	content: "";
+	width: 0%;
+	height: 4px;
+	background-color: #FD5E87;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	border-radius: 10px;
+	transition: .5s ease;
+}	
+
+section .container h1:hover::after {
+	left: 0%;
+	width: 100%;
 }
 
 .container .description {
@@ -180,6 +201,9 @@ button {
 	font-size: 1.2em;
 	font-weight: 300;
 	text-transform: uppercase;
+	border-bottom: 3px solid #FD5E87;
+	border-radius: 1px;
+	display: inline-block;
 }
 
 .description-text h2 {
@@ -192,6 +216,82 @@ button {
 	font-weight: 300;
 	line-height: 35px;
 	margin-top: 25px;
+}
+
+/*Beneficios*/
+
+.nosotros .container .content {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.benefits-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	max-width: 100%;
+	margin: 0 auto;
+	gap: 20px;
+}
+
+.benefits-list .img-card {
+	position: relative;
+	width: 250px;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .5s ease;
+}
+
+.benefits-list .img-card:hover {
+	transform: scale(1.1);
+}
+
+.benefits-list .img-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.benefits-list .img-card .overlay {
+	transition: .5s ease;
+}
+
+.benefits-list .img-card:hover .overlay {
+	z-index: 777;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	transition: scale(1.03);
+}
+
+.benefits-list .img-card .info {
+	position: absolute;
+	z-index: 777;
+	left: 0;
+	bottom: 0;
+	margin: 20px;
+	color: #fff;
+	opacity: 0;
+	transform: translateY(-20px);
+	transition: .5s ease;
+}
+
+.benefits-list .img-card:hover .info {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.benefits-list .img-card .info h3 {
+	font-size: 2em;
+	line-height: 40px;
+	margin-bottom: 15px;
+}
+
+.benefits-list .img-card .info span {
+	font-size: 1.2em;
+	font-weight: 300;
 }
 
 /*All styles*/
