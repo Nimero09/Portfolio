@@ -7,6 +7,9 @@
 	<title></title>
 </head>
 <body>
+	<div class="whatsapp-btn">
+		<a href="https://api.whatsapp.com/send/?phone=573143190763&text=Estoy+interesado+en+ser+modelo+WebCam&app_absent=0"><img src="img/whatsapp-btn.png"></a>
+	</div>
 	<!-- Header -->
 	<header>
 		<div class="nav-bar">
@@ -17,8 +20,8 @@
 				<div class="nav-items">
 					<a class="active" href="">Home</a>
 					<a href="#nosotros">Nosotros</a>
-					<a href="">Beneficios</a>
-					<a href="">Contáctanos</a>
+					<a href="#beneficios">Beneficios</a>
+					<a href="#contacto">Contáctanos</a>
 				</div>
 			</div>
 		</div>
@@ -57,7 +60,7 @@
 	</section>
 
 	<!-- Beneficios -->
-	<section class="nosotros" id="nosotros">
+	<section class="nosotros" id="beneficios">
 		<div class="container">
 			<h1 class="border">Beneficios</h1>
 			<div class="content">
@@ -107,54 +110,31 @@
 		</div>
 	</section>
 
-	<section class="nosotros" id="nosotros">
+	<!-- Contacto -->
+	<section class="contacto" id="contacto">
 		<div class="container">
-			<h1 class="border">Beneficios</h1>
+			<h1 class="border">Contáctanos</h1>
 			<div class="content">
-				<div class="benefits-list">
-					<div class="img-card-container">
-						<div class="img-card">
-							<div class="overlay"></div>
-							<div class="info">
-								<h3>Excelentes ingresos</h3>
-								<span>Aumenta tus ingresos significativamente con nuestro apoyo para tu crecimiento profesional.</span>
-							</div>
-							<img src="img/model-1.jpg">
+				<div class="contact-form-text">
+					<p>Escríbenos y empieza a cumplir tus sueños. Nos contactaremos contigo lo más pronto posible</p>
+					<form action="" class="contact-form">
+						<div class="first-row">
+							<input type="text" name="" placeholder="Nombre">
 						</div>
-					</div>
-					<div class="img-card-container">
-						<div class="img-card">
-							<div class="overlay"></div>
-							<div class="info">
-								<h3>Turnos flexibles</h3>
-								<span>Los turnos en Studio Body Pink fueron diseñados para que nuestras modelos gocen de total libertad mientras trabajan.</span>
-							</div>
-							<img src="img/model-2.jpg">
+						<div class="second-row">
+							<input type="email" name="" placeholder="Email">
+							<input type="text" name="" placeholder="Celular">
 						</div>
-					</div>
-					<div class="img-card-container">
-						<div class="img-card">
-							<div class="overlay"></div>
-							<div class="info">
-								<h3>Areas comunes</h3>
-								<span>Contamos con áreas comunes para tus que pases tus breaks con tranquilidad y comodidad.</span>
-							</div>
-							<img src="img/model-3.jpg">
+						<div class="third-row">
+							<textarea name="message" rows="7" placeholder="Nombre"></textarea>
 						</div>
-					</div>
-					<div class="img-card-container">
-						<div class="img-card">
-							<div class="overlay"></div>
-							<div class="info">
-								<h3>Capacitaciones</h3>
-								<span>Un equipo de profesionales te brindarán la mejor asesoría y acompañamiento continuo en tu formación como modelo.</span>
-							</div>
-							<img src="img/model-4.jpg">
-						</div>
-					</div>
+						<button class="btn-1" type="submit">Enviar Mensaje</button>
+					</form>
+
 				</div>
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

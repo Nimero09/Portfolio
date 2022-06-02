@@ -24,6 +24,20 @@ li {
 	list-style: none;
 }
 
+/*WhatsApp button*/
+.whatsapp-btn {
+	z-index: 999999;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.whatsapp-btn img {
+	max-width: 100px;
+}
+
 /*Header*/
 header {
 	z-index: 99999;
@@ -148,7 +162,6 @@ button {
 }
 
 /*About*/
-
 
 section .container h1 {
 	text-transform: uppercase;
@@ -292,6 +305,57 @@ section .container h1:hover::after {
 .benefits-list .img-card .info span {
 	font-size: 1.2em;
 	font-weight: 300;
+}
+
+/*Contacto*/
+
+.contacto .container .content {
+	width: 100%;
+}
+
+.contact-form-text {
+	text-align: center;
+}
+
+.contact-form {
+	margin-top: 25px;
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contact-form-text p {
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 35px;
+	margin-top: 25px;
+}
+
+.contact-form input, .contact-form textarea {
+	border: none;
+	padding: 15px 40px 15px 20px;
+	background: rgba(106,89,209,0.1);
+	margin-bottom: 20px;
+	border-radius: 10px;
+	font-size: 1.2em;
+}
+
+.contact-form .first-row input{
+	width: 100%;
+}
+
+.contact-form .second-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-form .second-row input {
+	width: 49%;
+}
+
+.contact-form .third-row textarea {
+	resize: none;
+	width: 100%;
 }
 
 /*All styles*/
