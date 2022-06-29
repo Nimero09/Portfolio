@@ -445,6 +445,31 @@ footer .container .contacto p {
 	color: #ADADAD;
 }
 
+@media screen and (max-width: 1070px) {
+	/*Navigation bar*/
+	.navigation {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header .nav-bar {
+		transition: .5s ease;
+		height: 5rem;
+	}
+
+	.nav-bar img {
+		width: 150px;
+		position: absolute;
+		top: 15px;
+		left: 20px;
+	}
+}
 
 /*All styles*/
 
