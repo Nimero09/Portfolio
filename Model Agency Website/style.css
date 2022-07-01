@@ -82,21 +82,21 @@ header .nav-bar {
 	text-transform: uppercase;
 }
 
-.nav-bar .nav-items a {
+.nav-items a {
 	color: #fff;
 	letter-spacing: 2px;
 	font-weight: 400;
 }
 
-.nav-bar .nav-items a:hover {
+.nav-items a:hover {
 	color: #FD5E87;
 }
 
-.nav-bar .nav-items a.active {
+.nav-items a.active {
 	color: #FD5E87;
 }
 
-.nav-bar .nav-items a:not(:last-child) {
+.nav-items a:not(:last-child) {
 	margin-right: 80px;
 }
 
@@ -456,6 +456,8 @@ footer .container .contacto p {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		opacity: 0;
+		visibility: hidden;
 	}
 
 	header .nav-bar {
@@ -479,6 +481,28 @@ footer .container .contacto p {
 		top: 20px;
 		right: 20px;
 		cursor: pointer;
+	}
+
+	.nav-items {
+		background: #1a1a1a;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+		width: 600px;
+		border-radius: 10px;
+	}
+
+
+	.nav-items a:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.nav-items a {
+		margin: 20px 10px;
+		display: flex;
+		align-items: center;
 	}
 }
 
