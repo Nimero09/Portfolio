@@ -460,6 +460,11 @@ footer .container .contacto p {
 		visibility: hidden;
 	}
 
+	.navigation.active {
+		opacity: 1;
+		visibility: visible;
+	}
+
 	header .nav-bar {
 		transition: .5s ease;
 		height: 5rem;
@@ -483,6 +488,19 @@ footer .container .contacto p {
 		cursor: pointer;
 	}
 
+	.nav-close-btn {
+		position: absolute;
+		background: url(./img/close-btn.png)no-repeat;
+		background-position: center;
+		background-size: 12px;
+		position: center;
+		width: 40px;
+		height: 40px;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+	}
+
 	.nav-items {
 		background: #1a1a1a;
 		display: flex;
@@ -492,6 +510,7 @@ footer .container .contacto p {
 		padding: 40px;
 		width: 600px;
 		border-radius: 10px;
+		position: relative;
 	}
 
 
